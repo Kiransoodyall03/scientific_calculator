@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* General Reset */
 * {
   margin: 0;
@@ -136,3 +137,119 @@ button:nth-child(14) {
     grid-gap: 20px; /* Reduced gap on smaller screens */
   }
 }
+=======
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f9;
+  }
+  
+  /* Calculator container */
+  .calculator {
+    width: 100%;
+    max-width: 400px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 40px; /* Increased padding for larger elements */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Display */
+  #display {
+    width: 100%;
+    height: 250px; /* Increased height */
+    font-size: 10em; /* 5x larger text size */
+    padding: 20px; /* Increased padding for larger text box */
+    text-align: right;
+    border: 2px solid #ccc;
+    border-radius: 20px; /* Larger rounded corners */
+    background-color: #f4f4f4;
+    color: #333;
+    margin-bottom: 40px; /* Increased margin */
+    box-shadow: inset 0 1px 10px rgba(0, 0, 0, 0.1); /* Deeper shadow */
+  }
+  
+  /* Button container */
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px; /* Increased gap between buttons */
+    width: 100%;
+  }
+  
+  /* Button styles */
+  button {
+    background-color: #3498db;
+    color: white;
+    font-size: 5em; /* 5x larger text size */
+    padding: 40px; /* 5x larger padding */
+    border: none;
+    border-radius: 20px; /* Larger rounded corners */
+    transition: background-color 0.2s ease;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Larger shadow for bigger buttons */
+    width: 100%;
+  }
+  
+  button:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Special buttons (Clear, Equals, etc.) */
+  button:active {
+    background-color: #1abc9c;
+    box-shadow: inset 0 2px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  button:focus {
+    outline: none;
+  }
+  
+  /* Size adjustments for function buttons */
+  button:nth-child(5), button:nth-child(6), button:nth-child(7), button:nth-child(8) {
+    background-color: #e67e22; /* Special color for operators */
+  }
+  
+  button:nth-child(9), button:nth-child(10), button:nth-child(11), button:nth-child(12) {
+    background-color: #f39c12; /* Color for number buttons */
+  }
+  
+  button:nth-child(13) {
+    background-color: #e74c3c; /* Clear button color */
+  }
+  
+  button:nth-child(14) {
+    background-color: #2ecc71; /* Equals button color */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .calculator {
+      padding: 30px;
+      width: 90%;
+    }
+  
+    #display {
+      font-size: 6em; /* Slightly smaller display text on smaller screens */
+    }
+  
+    button {
+      font-size: 3em; /* Slightly smaller button text on smaller screens */
+      padding: 30px; /* Slightly smaller padding on smaller screens */
+    }
+  }
+  
+>>>>>>> d7dc07e87d5b73c2c4a81d30b7dc527fb8a57c82
